@@ -4,7 +4,7 @@ RSpec.configure do |config|
   config.order = 'default'
 end
 
-def get_variable_from_file 
+def get_variable_from_file '/n' 'variable.rb'
   file_scope = binding
   file_scope.eval(File.read(file))
 
